@@ -403,6 +403,8 @@ def tabla_dash(dataframe):
 #______________________________________
 # Crear la aplicación Dash
 app_EDA = dash.Dash(__name__)
+server = app_EDA.server
+
 app_EDA.title = "Visualización de Dengue"
 
 # Layout de la aplicación
