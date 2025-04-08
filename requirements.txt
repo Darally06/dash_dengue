@@ -1,0 +1,8 @@
+dash
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+folium
+unidecode
