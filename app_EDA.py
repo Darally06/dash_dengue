@@ -14,6 +14,7 @@ import json
 import dash
 from dash import dash_table
 from dash import dcc, html
+import os
 #import openpyxl
 
 # 🔹 Lectura de la base de datos
@@ -478,7 +479,8 @@ app_EDA.layout = html.Div([
 
 # Ejecutar la aplicación
 if __name__ == "__main__":
-    app_EDA.run(debug=True)
+            port = int(os.environ.get("PORT", 8050))
+    app_EDA.run_server(host='0.0.0.0', port=port)
 
 
 
