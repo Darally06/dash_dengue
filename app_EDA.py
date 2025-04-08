@@ -480,7 +480,7 @@ app_EDA.layout = html.Div([
 # Ejecutar la aplicación
 if __name__ == "__main__":
             port = int(os.environ.get("PORT", 8050))
-    app_EDA.run_server(host='0.0.0.0', port=port)
+            app_EDA.run_server(host='0.0.0.0', port=port)
 
 
 
